@@ -1,0 +1,176 @@
+/* Reset CSS dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling dasar */
+body {
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* efek transparan biar teks tetap terbaca */
+    url("backgroundakatsuki.jpg.jpg") center/cover no-repeat fixed; /* gambar full 1 layar */
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Container utama */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styling dengan foto profil di tengah */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Foto profil berbentuk lingkaran */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.bio {
+  color: #fff;
+  font-weight: 500;
+  max-width: 400px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Link buttons styling */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  font-weight: 600;
+}
+
+.link-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.link-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.link-button i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+/* Warna khusus untuk setiap platform */
+.link-button.instagram {
+  border-left: 4px solid #e1306c;
+}
+.link-button.youtube {
+  border-left: 4px solid #ff0000;
+}
+.link-button.tiktok {
+  border-left: 4px solid #00f2ea;
+}
+.link-button.facebook {
+  border-left: 4px solid #1877f2;
+}
+.link-button.maps {
+  border-left: 4px solid #34a853;
+}
+
+/* Efek hover warna */
+.link-button.instagram:hover {
+  background-color: #e1306c;
+  color: white;
+}
+.link-button.youtube:hover {
+  background-color: #ff0000;
+  color: white;
+}
+.link-button.tiktok:hover {
+  background: linear-gradient(90deg, #00f2ea, #ff0050);
+  color: white;
+}
+.link-button.facebook:hover {
+  background-color: #1877f2;
+  color: white;
+}
+.link-button.maps:hover {
+  background-color: #34a853;
+  color: white;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .link-button {
+    padding: 12px;
+  }
+}
